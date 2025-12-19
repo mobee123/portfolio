@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Danupat</title>
+    
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            background-color: #1f242d;
+            color: #fff;
+            overflow-x: hidden; /* Prevents side scrolling */
+        }
+
+        /* Header & Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: rgba(0, 0, 0, 0.3); /* Slight dark overlay */
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 700;
+            color: #0ef;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 35px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #0ef;
+        }
+
+        /* Home Section */
+        .home {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+            justify-content: space-between;
+        }
+
+        .home-content h3 {
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .home-content h1 {
+            font-size: 56px;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        .home-content p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        span {
+            color: #0ef;
+        }
+
+        /* Social Media Links */
+        .social-media a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid #0ef;
+            border-radius: 50%;
+            color: #0ef;
+            margin: 30px 15px 30px 0;
+            transition: 0.5s ease;
+        }
+
+        .social-media a:hover {
+            background: #0ef;
+            color: #1f242d;
+            box-shadow: 0 0 20px #0ef;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #0ef;
+            border-radius: 40px;
+            color: #1f242d;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: 0.5s;
+        }
+
+        .btn:hover {
+            box-shadow: 0 0 20px #0ef;
+        }
+
+        /* Image styling */
+        .home-img img {
+            width: 35vw; /* Responsive width */
+            border-radius: 50%;
+            border: 5px solid #0ef;
+            box-shadow: 0 0 20px #0ef;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio.</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, It's Me </h3>
+            <h1>Danupat Phanrai</h1>
+            <h3>And I'm a <span>student from Samroiyod wittayakom School</span></h3>
+            <p>This is my portfolio for your University. I am passionate about technology and design.</p>
+            
+            <div class="social-media">
+                <a href="https://www.facebook.com/?locale=th_TH">FB</a>
+                <a href="https://www.instagram.com/?locale=th_TH">IG</a>
+                <a href="https://www.twitter.com/?locale=th_TH">TW</a>
+            </div>
+            
+            <a href="#" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="profile.png" alt="Profile Picture">
+        </div>
+    </section>
+</body>
+</html>
